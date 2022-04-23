@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: nodeapp
-        image: "joeanu7577/k8s-app:{{DOCKER_TAG}}"           
+        image: "joeanu7577/nodeapp:{{DOCKER_TAG}}"           
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
